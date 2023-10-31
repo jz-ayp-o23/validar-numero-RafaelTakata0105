@@ -19,10 +19,11 @@ def validar_numero(cadena):
             numero = False
         resultado.append(numero)
     if False in resultado or len(puntos) > 1:
-        respuesta = "no valido"
+        respuesta = "no"
     else:
-        respuesta = "válido"
-    return respuesta
+        respuesta = "sí"
+    salida = f"El texto introducido {respuesta} cumple con los requisitos"
+    return salida
 # Escribe aquí código para probar la función
-cadena = input("Introduzca el texto a verificar: ")
+cadena = input("Introduzca un número: ")
 print(validar_numero(cadena))
